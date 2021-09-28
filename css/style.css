@@ -1,0 +1,202 @@
+body {
+
+    box-sizing: border-box;
+    margin: 0;
+
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+
+.card {
+
+    background-color: hsl(244, 38%, 16%);
+    width: 75%;
+    height: 50%;
+    margin: 7% auto;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 10px;
+
+}
+
+.image-container {
+
+    position:relative;
+    width: 50%;
+    background: url(https://i.im.ge/2021/09/28/TfuLxX.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: contrast(0.8) brightness(1.1);
+    border-radius: 0 10px 10px 0;
+
+}
+
+.overlay {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    mix-blend-mode: multiply;
+    background-color: hsl(277, 65%, 58%);
+    border-radius: 0 10px 10px 0;
+
+}
+
+.info {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+
+}
+
+.status {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 5%;
+    margin-right: 10%;
+}
+
+.status-unit {
+
+    margin-right: 10%;
+
+}
+
+.description {
+
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+
+
+}
+
+h2 {
+
+    font-size: 2rem;
+
+}
+
+span {
+
+    color:hsl(277, 64%, 61%);
+
+}
+
+p {
+
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 2;
+
+}
+
+h3 {
+
+    color: hsl(0, 0%, 100%);
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+
+}
+
+.status p {
+
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+
+
+@media (max-width: 414px) {
+
+    .card {
+
+        width: 85%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        position: relative;
+
+    }
+
+    .info:before {
+
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 250px;
+        background: url(https://i.im.ge/2021/09/28/TfuII9.jpg);
+        background-size: cover;
+        filter: contrast(0.8) brightness(1.1);
+        top: 0;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .info:after {
+
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 250px;
+        z-index: 1000;
+        mix-blend-mode: multiply;
+        background-color: hsl(277, 65%, 58%);
+        border-radius: 15px 15px 0 0;
+        top: 0;
+
+    }
+
+
+    .info {
+
+        width: 100%;
+        height: 60%;
+        margin-top: 250px;
+
+    }
+
+    .description {
+
+        margin: 10% auto 2% auto;
+        width: 75%;
+
+    }
+
+    .status {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2% auto 10% auto;
+
+    }
+
+    h2 {
+
+        font-size: 1.5rem;
+    }
+
+    p {
+
+        font-size: 0.9rem;
+
+    }
+}
